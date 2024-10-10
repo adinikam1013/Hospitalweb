@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn more about Safalya Eye and Skin Hospital, a modern hospital in Somwarpeth, Ajara, offering quality eye and skin care services.">
-    <title>About Us - Safalya Eye and Skin Hospital</title>
+    <meta name="description" content="Meet our experienced doctors at Safalya Eye and Skin Hospital. Specializing in eye and skin care treatments. Located in Somwarpeth, Ajara, Kolhapur.">
+    <title>Doctors - Safalya Eye and Skin Hospital</title>
 
     <script type="application/ld+json">
     {
@@ -27,16 +27,11 @@
 
     <style>
         /* General styles */
-        html, body {
-            height: 100%; /* Ensures full height */
-            margin: 0; /* Resets default margin */
-        }
-
         body {
-            display: flex;
-            flex-direction: column; /* Stack children vertically */
+            margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
-            background-image: url(image/about-background.jpg); /* Background image */
+            background-image: url(image/background.jpg); /* Background image */
             background-size: cover;
             background-position: center;
             color: white;
@@ -77,17 +72,17 @@
             border-radius: 5px;
         }
 
-        /* About Us Section */
-        .about-section {
+        /* Doctors Section */
+        .doctors-section {
             display: flex;
             justify-content: space-around;
             padding: 100px 20px;
             background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
             margin-top: 60px; /* Space below the navbar */
-            flex-grow: 1;
+            flex-wrap: wrap;
         }
 
-        .about-card {
+        .doctor-card {
             background-color: #f9f9f9;
             padding: 20px;
             max-width: 300px;
@@ -95,48 +90,51 @@
             border: 1px solid #ddd;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s;
+            margin: 20px;
         }
 
-        .about-card:hover {
+        .doctor-card:hover {
             transform: translateY(-10px); /* Adds hover effect */
         }
 
-        .about-card img {
-            width: 150px; /* Fixed size for the image */
-            height: 150px; /* Fixed size for the image */
+        .doctor-card img {
+            width: 150px; /* Fixed size for all images */
+            height: 150px; /* Fixed size for all images */
             max-width: 150px;
             max-height: 150px;
             border-radius: 50%; /* Circular images */
             object-fit: cover;
         }
 
-        .about-card h3 {
+        .doctor-card h3 {
             color: #2e8b57;
             margin-top: 15px;
         }
 
-        .about-card p {
+        .doctor-card p {
             color: #555;
             margin: 5px 0;
         }
 
         /* Footer styles */
         footer {
-            margin-top: auto; /* Pushes the footer to the bottom */
             text-align: center;
             padding: 10px;
             background-color: #2e8b57;
             color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
 
         /* Mobile responsiveness */
         @media (max-width: 768px) {
-            .about-section {
+            .doctors-section {
                 flex-direction: column;
                 align-items: center;
             }
 
-            .about-card {
+            .doctor-card {
                 margin-bottom: 20px;
                 width: 90%;
             }
@@ -157,27 +155,38 @@
         </ul>
     </nav>
 
-    <!-- About Us Section -->
-    <div class="about-section">
-        <div class="about-card">
-            <img src="image/hospital.jpg" alt="Safalya Eye and Skin Hospital">
-            <h3>About Us</h3>
-            <p>At Safalya Eye and Skin Hospital, we are dedicated to providing exceptional eye and skin care treatments using the latest technology and techniques.</p>
-            <p>Our experienced team ensures personalized care for each patient in a modern, comfortable environment.</p>
+    <!-- Doctors Section -->
+    <div class="doctors-section">
+        <!-- Doctor 1 -->
+        <div class="doctor-card">
+            <img src="image/doctor1.jpeg" alt="Dr. Aniket Magdum">
+            <h3>Dr. Aniket Magdum</h3>
+            <p>Role: Eye Specialist</p>
+            <p>Dr. Aniket has 15 years of experience in eye care, specializing in cataract surgeries and vision correction.</p>
+        </div>
+        
+        <!-- Doctor 2 -->
+        <div class="doctor-card">
+            <img src="image/doctor2.jpeg" alt="Dr. Sweedle Magdum">
+            <h3>Dr. Sweedle Magdum</h3>
+            <p>Role: Dermatologist</p>
+            <p>Dr. Sweedle is an expert in skin treatments and has been treating skin disorders for over a decade.</p>
+        </div>
+        
+        <!-- Doctor 3 -->
+        <div class="doctor-card">
+            <img src="image/doctor3.jpeg" alt="Dr. Smita Fernandes">
+            <h3>Dr. Smita Fernandes</h3>
+            <p>Role: Pediatric Ophthalmologist</p>
+            <p>Dr. Smita is renowned for her work in pediatric eye care and treating eye conditions in children.</p>
         </div>
 
-        <div class="about-card">
-            <img src="image/doctor.jpg" alt="Our Doctors">
-            <h3>Our Doctors</h3>
-            <p>Our team consists of highly qualified ophthalmologists and dermatologists with years of expertise in their respective fields.</p>
-            <p>They are committed to improving patient outcomes through advanced medical practices.</p>
-        </div>
-
-        <div class="about-card">
-            <img src="image/technology.jpg" alt="Advanced Technology">
-            <h3>Advanced Technology</h3>
-            <p>We utilize state-of-the-art equipment and modern techniques to offer the best treatments for eye and skin care.</p>
-            <p>Our hospital is constantly evolving to stay at the forefront of medical advancements.</p>
+        <!-- Doctor 4 -->
+        <div class="doctor-card">
+            <img src="image/doctor4.jpg" alt="Dr. Austin Fernandes">
+            <h3>Dr. Austin Fernandes</h3>
+            <p>Role: General Physician</p>
+            <p>Dr. Kumar has extensive experience in general healthcare, offering treatments for various common ailments.</p>
         </div>
     </div>
 

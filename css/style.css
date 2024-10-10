@@ -1,23 +1,10 @@
 /* General Styles */
-html, body {
-    height: 100%; /* Ensures full height */
-    margin: 0; /* Resets default margin */
-}
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column; /* Stack children vertically */
 }
-
-footer {
-    margin-top: auto; /* Pushes the footer to the bottom */
-}
-
-
 
 header {
     background-color: #2e8b57;
@@ -30,7 +17,6 @@ nav ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
-    margin: 0;
 }
 
 nav ul li {
@@ -70,12 +56,8 @@ nav ul li a:hover {
 }
 
 .doctor-card img {
-    width: 150px; /* Fixed size for all images */
-    height: 150px; /* Fixed size for all images */
-    max-width: 150px; /* Ensure the images don't exceed the set width */
-    max-height: 150px; /* Ensure the images don't exceed the set height */
-    border-radius: 50%; /* Makes the images circular */
-    object-fit: cover; /* Prevents stretching and keeps the image ratio */
+    max-width: 100%;
+    border-radius: 50%;
 }
 
 .doctor-card h3 {
@@ -88,7 +70,16 @@ nav ul li a:hover {
     margin: 5px 0;
 }
 
-
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2e8b57;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {

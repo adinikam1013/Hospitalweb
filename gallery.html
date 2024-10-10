@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn more about Safalya Eye and Skin Hospital, a modern hospital in Somwarpeth, Ajara, offering quality eye and skin care services.">
-    <title>About Us - Safalya Eye and Skin Hospital</title>
+    <meta name="description" content="Explore the gallery of Safalya Eye and Skin Hospital in Somwarpeth, Ajara, showcasing our state-of-the-art facilities and services.">
+    <title>Gallery - Safalya Eye and Skin Hospital</title>
 
     <script type="application/ld+json">
     {
@@ -36,7 +36,7 @@
             display: flex;
             flex-direction: column; /* Stack children vertically */
             font-family: Arial, sans-serif;
-            background-image: url(image/about-background.jpg); /* Background image */
+            background-image: url(image/gallery-background.jpg); /* Background image */
             background-size: cover;
             background-position: center;
             color: white;
@@ -77,9 +77,10 @@
             border-radius: 5px;
         }
 
-        /* About Us Section */
-        .about-section {
+        /* Gallery Section */
+        .gallery-section {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
             padding: 100px 20px;
             background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
@@ -87,7 +88,7 @@
             flex-grow: 1;
         }
 
-        .about-card {
+        .gallery-card {
             background-color: #f9f9f9;
             padding: 20px;
             max-width: 300px;
@@ -95,27 +96,26 @@
             border: 1px solid #ddd;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s;
+            margin: 15px;
         }
 
-        .about-card:hover {
+        .gallery-card:hover {
             transform: translateY(-10px); /* Adds hover effect */
         }
 
-        .about-card img {
-            width: 150px; /* Fixed size for the image */
-            height: 150px; /* Fixed size for the image */
-            max-width: 150px;
-            max-height: 150px;
-            border-radius: 50%; /* Circular images */
+        .gallery-card img {
+            width: 100%; /* Responsive image */
+            height: 200px;
             object-fit: cover;
+            border-radius: 10px; /* Rounded corners */
         }
 
-        .about-card h3 {
+        .gallery-card h3 {
             color: #2e8b57;
             margin-top: 15px;
         }
 
-        .about-card p {
+        .gallery-card p {
             color: #555;
             margin: 5px 0;
         }
@@ -131,12 +131,12 @@
 
         /* Mobile responsiveness */
         @media (max-width: 768px) {
-            .about-section {
+            .gallery-section {
                 flex-direction: column;
                 align-items: center;
             }
 
-            .about-card {
+            .gallery-card {
                 margin-bottom: 20px;
                 width: 90%;
             }
@@ -157,27 +157,30 @@
         </ul>
     </nav>
 
-    <!-- About Us Section -->
-    <div class="about-section">
-        <div class="about-card">
-            <img src="image/hospital.jpg" alt="Safalya Eye and Skin Hospital">
-            <h3>About Us</h3>
-            <p>At Safalya Eye and Skin Hospital, we are dedicated to providing exceptional eye and skin care treatments using the latest technology and techniques.</p>
-            <p>Our experienced team ensures personalized care for each patient in a modern, comfortable environment.</p>
+    <!-- Gallery Section -->
+    <div class="gallery-section">
+        <div class="gallery-card">
+            <img src="image/gallery1.jpg" alt="Facility Image 1">
+            <h3>Hospital Facilities</h3>
+            <p>Modern, well-equipped eye and skin treatment facilities.</p>
         </div>
 
-        <div class="about-card">
-            <img src="image/doctor.jpg" alt="Our Doctors">
-            <h3>Our Doctors</h3>
-            <p>Our team consists of highly qualified ophthalmologists and dermatologists with years of expertise in their respective fields.</p>
-            <p>They are committed to improving patient outcomes through advanced medical practices.</p>
+        <div class="gallery-card">
+            <img src="image/gallery2.jpg" alt="Doctor and Patient">
+            <h3>Doctor Consultation</h3>
+            <p>Consult with our experienced doctors for personalized care.</p>
         </div>
 
-        <div class="about-card">
-            <img src="image/technology.jpg" alt="Advanced Technology">
-            <h3>Advanced Technology</h3>
-            <p>We utilize state-of-the-art equipment and modern techniques to offer the best treatments for eye and skin care.</p>
-            <p>Our hospital is constantly evolving to stay at the forefront of medical advancements.</p>
+        <div class="gallery-card">
+            <img src="image/gallery3.jpg" alt="Patient Care">
+            <h3>Patient Care</h3>
+            <p>Comfortable and compassionate patient care environment.</p>
+        </div>
+
+        <div class="gallery-card">
+            <img src="image/gallery4.jpg" alt="Advanced Equipment">
+            <h3>Advanced Equipment</h3>
+            <p>State-of-the-art equipment for eye and skin treatment.</p>
         </div>
     </div>
 

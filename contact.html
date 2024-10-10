@@ -3,40 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact us for more information or to book an appointment.">
-    <title>Contact Us - Hospital</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Get in touch with Safalya Eye and Skin Hospital. Fill out the contact form to inquire about services or visit us at Somwarpeth, Ajara, Kolhapur.">
+    <title>Contact Us - Safalya Eye and Skin Hospital</title>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hospital",
+      "name": "Safalya Eye and Skin Hospital",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Somwarpeth, Ajara, Kolhapur",
+        "telephone": "+91-9067285550",
+        "email": "safalyaeyeandskin@gmail.com"
+      },
+      "url": "https://safalya-hospital.com",
+      "sameAs": [
+        "https://www.facebook.com/safalyaeyeandskin",
+        "https://twitter.com/safalyaeyeandskin"
+      ]
+    }
+    </script>
+
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url(image/contact-background.jpg); /* Background image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 5px;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 100px 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+            margin-top: 60px; /* Space below the navbar */
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-info {
+            max-width: 600px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-info h2 {
+            color: #2e8b57;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            color: #555;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            max-width: 600px;
+            width: 100%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .contact-form textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #2e8b57;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #256c44;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2e8b57;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .contact-info h2 {
+                font-size: 24px;
+            }
+
+            .contact-form {
+                width: 90%;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <h1>Contact Us</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="contact">
-        <h2>Get in Touch</h2>
-        <form action="#" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>We would love to hear from you. Please fill out the form below or contact us directly through our phone number or email.</p>
+            <p><strong>Address:</strong> Somwarpeth, Ajara, Kolhapur</p>
+            <p><strong>Phone:</strong> +91-9067285550</p>
+            <p><strong>Email:</strong> safalyaeyeandskin@gmail.com</p>
+        </div>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Submit</button>
+        <!-- Contact Form -->
+        <form class="contact-form" action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
         </form>
-    </section>
+    </div>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Hospital. All rights reserved.</p>
+        <p>Safalya Eye and Skin | Contact: 9067285550 / 9067285551 | Email: safalyaeyeandskin@gmail.com</p>
     </footer>
 </body>
 </html>
